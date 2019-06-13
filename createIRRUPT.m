@@ -6,12 +6,12 @@ function [BIR4s1, BIR4s2decHinder, BIR4s2obs, BIR4s3Hinder, BIR4180] = createIRR
 %BIR4s2obs is the second segment played in I 
 %BIR4s3Hinder is the third segment played in I and S
 %BIR4180 is the adiabatic inversion played on both I and S
-%delta is the phasejump that controls the amount of transfered
+%delta is the phasejump that controls the amount of transfered polarization
 %res is the spacing in seconds between two timepoints of the output
-%Tp is the duration in seconds for one BIR4 pulse
-%If delta = 90 this generates pulsesfor an BINEPT sequence (Merkle 1992) 
+%Tp is the duration in seconds for one BIR4 pulse (2 msis used in the publication)
+%If delta = 90 this generates pulses for an BINEPT sequence (Merkle 1992) 
 %zeta, kappa are parameters as described in Garwood 1991
-%recommended zeta = 10, kappa = atan(20)
+%recommended by Garwoodzeta = 10, kappa = atan(20)
 %deltaomegamax is the sweepwidth, recommended in Garwood 1991:  2 pi 45/Tp
 deltaphidec = pi + (delta*pi/180)/2 ;
 deltaphiobs = pi ;
